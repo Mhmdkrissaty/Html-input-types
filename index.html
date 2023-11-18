@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        cursor: none;
+        background-color: #040C26
+      }
+      .div {
+        height: 400px;
+        width: 766px;
+        border-radius: 18px;
+        border: 2px solid #fff;
+        overflow: auto;
+        resize: both;
+      }
+      .custom-cursor {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(200, 83, 255);
+        border-radius: 50%;
+        pointer-events: none;
+        left: 50%;
+        top: 50%;
+      }
+    </style>
+  </head>
+  <body style="background-color: #040C26">
+    <div class="custom-cursor"></div>
+    <div class="div">
+   <!-- Button -->
+<input type="button" value="Button" style="margin-top: 10px;margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Checkbox -->
+<input type="checkbox" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Color Picker -->
+<input type="color" name="color" value="#ff0000" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Date Picker -->
+<input type="date" name="date" value="2023-06-09" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Email -->
+<input type="email" name="email" placeholder="m@example.com" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- File Selector -->
+<input type="file" name="file" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Number -->
+<input type="number" name="number" value="12345" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Password -->
+<input type="password" name="password" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Radio Button -->
+<input type="radio" name="radio" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Range Slider -->
+<input type="range" name="range" value="50" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Search -->
+<input type="search" name="search" placeholder="coding_dev..." style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Submit Button -->
+<input type="submit" value="Submit" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Reset Button -->
+<input type="reset" value="Reset" style="margin-bottom: 10px; margin-left: 10px;"><br>
+<!-- Text -->
+<input type="text" name="text" placeholder="Coding Dev" style="margin-bottom: 10px; margin-left: 10px;"><br>
+    </div>
+    <script>
+      // JavaScript to move the curƒsor
+      document.addEventListener("mousemove", function (e) {
+        var cursor = document.querySelector(".custom-cursor");
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+    </script>
+  </body>
+</html>
